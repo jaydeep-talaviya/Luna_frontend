@@ -1,0 +1,44 @@
+.loader {
+    border: 16px solid #bdc3c7;
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    border-top-color: #1abc9c;
+    border-bottom-color: #3498db;
+    border-radius: 50%;
+    animation: coloredspin linear 3s infinite;
+    -webkit-box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 25px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes coloredspin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      border-top-color: red;
+      border-bottom-color: yellow;
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
