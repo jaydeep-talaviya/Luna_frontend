@@ -18,6 +18,8 @@ import PostDetail from './PostDetail.js';
 import ForgetPassword from './ForgetPassword.js';
 import PasswordReset from './PasswordReset.js';
 
+import NotFound from './NotFound.js';
+
 class App extends Component {
   constructor(props){
     super(props)
@@ -59,7 +61,7 @@ handleLogout(islogin){
                   <Route exact path="/request-reset-email" render={(routeprops)=><ForgetPassword {...routeprops}/>} />
                   <Route exact path="/password-reset/:uid/:token" render={(routeprops)=><PasswordReset {...routeprops}/>} />
                   
-
+                  <Route component={NotFound} />
                 </Switch>
              
           </main>
