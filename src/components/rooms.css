@@ -1,0 +1,84 @@
+
+.room_container {
+    min-height: calc(100vh - 100px); /* Adjust the value (20px in this example) to change the space at the bottom */
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  
+  .room_content_left {
+    width: 40%;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust the background color as desired */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visual effect */
+  }
+  .room_content_right {
+    width: 60%;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust the background color as desired */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visual effect */
+  }
+
+
+.chat_messages {
+    margin-top: 50px;
+    width: 100vw;
+    height: 85vh;
+    position: relative;
+    overflow-y: hidden;
+}
+.chat_message {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+.chat_owner {
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+    border: 2px solid #111;
+    border-radius: 12px;
+    background-color: wheat;
+    width: fit-content;
+    max-width: 60vh;
+    align-self: flex-end;
+}
+.chat_another {
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+    border: 2px solid #111;
+    border-radius: 12px;
+    background-color: aqua;
+    width: fit-content;
+    max-width: 60vh;
+    right: 0;
+}
+img {
+    object-fit: cover;
+}
+.chat_send {
+    width: 100%;
+    height: 6vh;
+    padding: 6px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .chat_send input[type="text"] {
+    flex-basis: 70%;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .chat_send input[type="submit"] {
+    flex-basis: 10%;
+    cursor: pointer;
+  }
+  .chat_send input[type="file"] {
+    flex-basis: 10%;
+    cursor: pointer;
+  }
+  
